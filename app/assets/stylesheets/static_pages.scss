@@ -4,6 +4,63 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@-moz-keyframes panelLoad {
+  0% {
+    -moz-transform: translateY(100px);
+    -moz-opacity: 0;
+  }
+  100% {
+    -moz-transform: translateY(0);
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes panelLoad {
+  0% {
+    -webkit-transform: translateY(100px);
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+}
+@keyframes panelLoad {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.panel {
+  -moz-animation-name: panelLoad;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 0.9s;
+
+  -webkit-animation-name: panelLoad;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 0.9s;
+
+  animation-name: panelLoad;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.9s;
+}
 .showInfoBtn {
   float: right;
+  cursor: pointer;
+}
+
+.info {
+  margin-bottom: 0px;
+  margin-top: 15px;
 }

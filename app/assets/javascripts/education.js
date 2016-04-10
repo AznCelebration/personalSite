@@ -3,6 +3,6 @@
  */
 $(document).ready(function(){
     $(document.getElementsByClassName("showInfoBtn")).click(function () {
-        $(this).next('p').slideToggle();
+        $(this).next('div').slideToggle(200);
     });
 });
