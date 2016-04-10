@@ -2,8 +2,44 @@
 <html>
 <head>
   <% provide(:title, "Education") %>
+  <%= javascript_include_tag('education.js') %>
 </head>
 <body>
-  <p>test</p>
+  <div id="panel-container" class="container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Basic panel example
+        <div class="content">
+          <button class="showInfoBtn">Click me</button>
+          <p class="info collapse">test</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Basic panel example
+        <div class="content">
+          <button class="showInfoBtn">Click me</button>
+          <p class="info collapse">test</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Basic panel example
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Basic panel example
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Basic panel example
+      </div>
+    </div>
+  </div>
 </body>
 </html>
