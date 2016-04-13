@@ -63,4 +63,14 @@ html {
 .info {
   margin-bottom: 0px;
   margin-top: 15px;
+  overflow: auto;
+}
+
+.infoList li {
+  float: left;
+  width: 50%;
+}
+
+#education {
+  background-image: url("UCSD.jpg");
 }
