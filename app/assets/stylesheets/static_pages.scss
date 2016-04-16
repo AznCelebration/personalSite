@@ -73,4 +73,13 @@ html {
 
 #education {
   background-image: url("UCSD.jpg");
+  background-size: cover;
+}
+
+#titleDiv {
+  text-align: center;
+  color: white;
+  font-family: Verdana, Arial;
+  border-bottom: 2px white solid;
+  margin-bottom: 1em;
 }
