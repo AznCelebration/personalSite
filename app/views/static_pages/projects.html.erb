@@ -2,8 +2,34 @@
 <html>
 <head>
   <% provide(:title, "Projects") %>
+  <%= javascript_include_tag('static_pages_js') %>
 </head>
-<body>
-<p>test</p>
+<body id="education">
+  <div id="titleDiv">
+    <p>
+      Curious about what I've been tinkering with in my spare time? Check out the projects below!
+    </p>
+  </div>
+  <div id="panel-container" class="container">
+    <div class="panel panel-default">
+      <div class="panel-body projectPanel">
+        <h4 class="projectHeader">HitMeUp</h4>
+        <div class="projectBody">
+          <button type="button" class="btn btn-info projectBtn">Tech</button>
+          <div id="projectText" class="projectInfo">
+            Having trouble organizing those huge social outings and family reunions or just want to see who's
+            free for some quick lunch? HitMeUp allows you to maintain a calendar of your personal events and
+            compares them to those in your friends list to find optimal free time! Check out your friends tab
+            to get a quick checkup on who's free at the moment or visit their profile page to see their
+            extensive calendar. Don't worry about privacy issues, HitMeUp automatically omits your calendar from
+            your profile page to those who aren't on your friends list!
+          </div>
+          <div class="projectImg">
+            <img alt="HitMeUpPic" src="assets/HitMeUp.jpg"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -39,6 +39,9 @@ html {
   overflow-y: scroll;
 }
 
+.navbar {
+  margin-bottom: 10px;
+}
 .panel {
   -moz-animation-name: panelLoad;
   -moz-animation-iteration-count: 1;
@@ -81,5 +84,47 @@ html {
   color: white;
   font-family: Verdana, Arial;
   border-bottom: 2px white solid;
-  margin-bottom: 1em;
+  margin: 2px 3em 1em 3em;
+}
+
+.projectHeader {
+  text-align: center;
+  border-bottom: 2px darkgrey solid;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+}
+
+.projectPanel {
+  padding-top: 1px;
+}
+
+.projectInfo {
+  width: 40%;
+  display: inline-block;
+  word-wrap: break-word;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.projectImg {
+  width: 60%;
+  display: inline-block;
+  float: left;
+  border-right: 2px darkgrey solid;
+}
+
+img {
+  max-width: 100%;
+}
+
+.projectBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display:inline;
+}
+
+.projectBody {
+  position: relative;
+  overflow: auto;
 }
