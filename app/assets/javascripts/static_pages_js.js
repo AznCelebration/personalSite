@@ -7,7 +7,7 @@ $(document).ready(function(){
     });
     $(document.getElementsByClassName("projectBtn")).click(function () {
         $(this).text(function(i, text) {
-            return text === "Tech" ? "Info" : "Tech";
+            return text === "See the Tech" ? "See the Info" : "See the Tech";
         });
         $(this).next('div').children().toggle();
     });
