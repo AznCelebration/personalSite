@@ -39,9 +39,38 @@ html {
   overflow-y: scroll;
 }
 
+body {
+  padding-top: 70px;
+}
+
 .navbar {
   margin-bottom: 10px;
+  border-bottom: 1px dimgrey solid;
+  background-color: steelblue;
+  box-shadow: 0 10px 8px -8px;
+  -webkit-box-shadow: 0 10px 8px -8px;
+  -moz-box-shadow: 0 10px 8px -8px;
 }
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  > li {
+    float: none;
+    display: inline-block;
+  }
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-size: 1.2em;
+}
+
+.navbar-default .navbar-nav > li.active > a {
+  background-color: white;
+  color: steelblue;
+}
+
 .panel {
   -moz-animation-name: panelLoad;
   -moz-animation-iteration-count: 1;
@@ -128,3 +157,8 @@ img {
   position: relative;
   overflow: auto;
 }
+
+.fa-link {
+  color: dodgerblue;
+}
+

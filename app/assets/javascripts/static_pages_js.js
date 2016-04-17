@@ -9,8 +9,6 @@ $(document).ready(function(){
         $(this).text(function(i, text) {
             return text === "Tech" ? "Info" : "Tech";
         });
-        $(this).next('div').text(function(i, text) {
-            return text === "Tech" ? "Info" : "Tech";
-        });
+        $(this).next('div').children().toggle();
     });
 });
