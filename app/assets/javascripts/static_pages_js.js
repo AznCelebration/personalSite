@@ -15,4 +15,16 @@ $(document).ready(function(){
     var h = $(window).height();
     $('#gradient').css('width', w);
     $('#gradient').css('height', h);
+    if($('body#home').length > 0) {
+        $("#black").fadeTo(6000, 0);
+        $(".navbar").hide();
+        //$(".navbar").hide().fadeIn(10000);
+    }
 });
+$(window).on('resize', function() {
+    var w = $(window).width();
+    var h = $(window).height();
+    $('#gradient').css('width', w);
+    $('#gradient').css('height', h);
+});
+
