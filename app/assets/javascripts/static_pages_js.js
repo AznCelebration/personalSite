@@ -11,4 +11,8 @@ $(document).ready(function(){
         });
         $(this).next('div').children().toggle();
     });
+    var w = $(window).width();
+    var h = $(window).height();
+    $('#gradient').css('width', w);
+    $('#gradient').css('height', h);
 });

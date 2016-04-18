@@ -87,6 +87,7 @@ body {
   animation-timing-function: ease-out;
   animation-duration: 0.9s;
 }
+
 .showInfoBtn {
   float: right;
   cursor: pointer;
@@ -106,6 +107,21 @@ body {
 #education {
   background-image: url("UCSD.jpg");
   background-size: cover;
+}
+
+#home {
+  background-image: url("Home1.gif");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+#gradient {
+  margin-top: -70px;
+  background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 15%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 85%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 15%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 85%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
 }
 
 #titleDiv {
@@ -161,4 +177,5 @@ img {
 .fa-link {
   color: dodgerblue;
 }
+
 
