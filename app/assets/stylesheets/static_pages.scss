@@ -45,13 +45,16 @@ body {
 
 .navbar {
   margin-bottom: 10px;
-  border-bottom: 3px white solid;
-  background-color: steelblue;
+  background-color:rgba(0,0,0,0);
+  /*
   box-shadow: 0 10px 8px -8px;
   -webkit-box-shadow: 0 10px 8px -8px;
-  -moz-box-shadow: 0 10px 8px -8px;
+  -moz-box-shadow: 0 10px 8px -8px;*/
 }
 
+.navbar-default {
+  border: none;
+}
 .navbar-nav {
   width: 100%;
   text-align: center;
@@ -64,6 +67,7 @@ body {
 .navbar-default .navbar-nav > li > a {
   color: white;
   font-size: 1.1em;
+  background-color:rgba(0,0,0,0.7);
 }
 
 .navbar-default .navbar-nav > li.active > a {
@@ -143,12 +147,11 @@ body {
   left: 0;
 }
 
-#home-info {
+#home-main {
   border-radius: 1.5px;
   position: absolute;
-  bottom: 5em;
+  bottom: 1em;
   left: 16em;
-  background-color:rgba(0,0,0,0.5);
 }
 
 #home-title {
@@ -159,31 +162,61 @@ body {
   background-color:rgba(0,0,0,0.5);
 }
 
+
 #home-resume {
   border-radius: 1.5px;
-  position: absolute;
-  bottom: 1em;
-  left: 16em;
+  display: inline-block;
+  padding-bottom: 0px;
   background-color:rgba(0,0,0,0.5);
 }
 
-#home-text {
-  padding: 10px 10px 0 15px;
+#home-info {
+  border-radius: 1.5px;
+  background-color:rgba(0,0,0,0.5);
+}
+
+.text {
+  padding: 10px 10px 10px 15px;
   color: white;
   font-family: 'Raleway', sans-serif;
 }
 
 #home-resume-text {
-  padding: 10px 10px 0 15px;
-  color: white;
-  font-family: 'Raleway', sans-serif;
+  padding-bottom: 0px;
 }
-
 #home-title-text {
   padding: 10px 10px 0 15px;
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4em;
+}
+
+.download {
+  margin-left: 5px;
+  border: 2px solid green;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  font-family: 'Raleway', sans-serif;
+  background-color:rgba(0,0,0,0.7);
+  color: green;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  -mozkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.download:hover {
+  margin-left: 5px;
+  border: 2px solid green;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  font-family: 'Raleway', sans-serif;
+  background-color: green;
+  color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  -mozkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 #titleDiv {

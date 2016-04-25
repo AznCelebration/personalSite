@@ -18,9 +18,13 @@ $(document).ready(function(){
     $('#gradient').css('width', w);
     $('#gradient').css('height', h);
     if($('body#home').length > 0) {
-        $("#black").fadeTo(6000, 0);
-        $(".navbar").hide();
-        //$(".navbar").hide().fadeIn(10000);
+        $('#home-title').hide();
+        $('#home-main').hide();
+        $("#black").fadeTo(3000, 0, function() {
+            $('#home-title').fadeIn( function() {
+                $('#home-main').fadeIn(500);
+            });
+        });
     }
 });
 $(window).on('resize', function() {
