@@ -118,6 +118,7 @@ body {
 
 #gradient {
   margin-top: -70px;
+  position: relative;
   background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%,
           rgba(0,0,0,1) 15%, rgba(0,0,0,0) 25%,
           rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%,
@@ -135,9 +136,56 @@ body {
 
 #black {
   height: 100%;
-  weight: 100%;
+  width: 100%;
   background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
+#home-info {
+  border-radius: 1.5px;
+  position: absolute;
+  bottom: 5em;
+  left: 16em;
+  background-color:rgba(0,0,0,0.5);
+}
+
+#home-title {
+  border-radius: 1.5px;
+  position: absolute;
+  top: 5em;
+  left: 16em;
+  background-color:rgba(0,0,0,0.5);
+}
+
+#home-resume {
+  border-radius: 1.5px;
+  position: absolute;
+  bottom: 1em;
+  left: 16em;
+  background-color:rgba(0,0,0,0.5);
+}
+
+#home-text {
+  padding: 10px 10px 0 15px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+#home-resume-text {
+  padding: 10px 10px 0 15px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+#home-title-text {
+  padding: 10px 10px 0 15px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+}
+
 #titleDiv {
   text-align: center;
   color: white;

@@ -13,6 +13,8 @@ $(document).ready(function(){
     });
     var w = $(window).width();
     var h = $(window).height();
+    var homeTextH = $('#home-info').height();
+    $('#info-background').css('height', homeTextH);
     $('#gradient').css('width', w);
     $('#gradient').css('height', h);
     if($('body#home').length > 0) {
