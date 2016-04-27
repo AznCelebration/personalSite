@@ -2,8 +2,28 @@
 <html>
 <head>
   <% provide(:title, "Work Experience") %>
+  <%= javascript_include_tag('static_pages_js') %>
 </head>
 <body>
-<p>test</p>
+  <div class="left-list">
+    <div id="titleDiv">
+      Check out my job experience!
+    </div>
+    <button id="isa" class="list-item">ISA Japan</button>
+  </div>
+  <div class="info-panel">
+    <div id="pisa" class="panel panel-default">
+      <div class="panel-body projectPanel">
+        <h4 class="projectHeader">ISA Japan
+          <a href="http://www.isa.co.jp/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+        </h4>
+        <p class="date">Aug. 2015</p>
+        <div class="projectBody">
+          <div class="projectInfo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,11 +1,10 @@
 /**
  * Created by ksrithon on 4/9/16.
  */
+var pageInitialized = false;
 $(document).ready(function(){
-    var w = $(window).width();
-    var h = $(window).height();
-    $('#gradient').css('width', w);
-    $('#gradient').css('height', h);
+    if(pageInitialized) return;
+    pageInitialized = true;
     $(document.getElementsByClassName("list-item")).click(function () {
         var id = $(this).attr('id');
         var id = "p" + id;
@@ -29,11 +28,6 @@ $(document).ready(function(){
             });
         });
     }
-});
-$(window).on('resize', function() {
-    var w = $(window).width();
-    var h = $(window).height();
-    $('#gradient').css('width', w);
-    $('#gradient').css('height', h);
+    $(".left-list").fadeIn(600);
 });
 

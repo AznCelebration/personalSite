@@ -4,44 +4,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-@-moz-keyframes panelLoad {
-  0% {
-    -moz-transform: translateY(100px);
-    -moz-opacity: 0;
-  }
-  100% {
-    -moz-transform: translateY(0);
-    -moz-opacity: 1;
-  }
-}
-@-webkit-keyframes panelLoad {
-  0% {
-    -webkit-transform: translateY(100px);
-    -webkit-opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    -webkit-opacity: 1;
-  }
-}
-@keyframes panelLoad {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-html {
-  overflow-y: scroll;
-}
-
 body {
   padding-top: 70px;
   background-color: black;
+  background-image: url("Home3.gif");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .navbar {
@@ -89,23 +58,6 @@ body {
   outline: 0;
 }
 
-.panel {
-  -moz-animation-name: panelLoad;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-duration: 0.9s;
-
-  -webkit-animation-name: panelLoad;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-duration: 0.9s;
-
-  animation-name: panelLoad;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-duration: 0.9s;
-}
-
 .showInfoBtn {
   float: right;
   cursor: pointer;
@@ -117,29 +69,13 @@ body {
   overflow: auto;
 }
 
-.info-table {
-  border: 1px solid white;
-  border-bottom: 1px solid white;
-
-}
-
 td {
   vertical-align: top;
 }
 
-#genPage {
-  background-image: url("UCSD.jpg");
-  background-size: cover;
-}
-
-#home {
-  background-image: url("Home3.gif");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
 #gradient {
+  width: 100vw;
+  height: 100vh;
   margin-top: -70px;
   position: relative;
   background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%,
@@ -206,6 +142,7 @@ td {
 #home-resume-text {
   padding-bottom: 0px;
 }
+
 #home-title-text {
   padding: 10px 10px 0 15px;
   color: white;
@@ -249,6 +186,7 @@ td {
   border-bottom: 2px darkgrey solid;
   padding-bottom: 2px;
   margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 .projectPanel {
@@ -291,6 +229,7 @@ img {
 }
 
 .left-list {
+  display: none;
   position: absolute;
   top: 0;
   width: 15%;
@@ -349,4 +288,11 @@ img {
   font-family: "Raleway", sans-serif;
   border-color: rgba(0,0,0,0);;
   background-color:rgba(0,0,0,0.7);
+}
+
+.date {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 14px 16px 0 0;
 }
