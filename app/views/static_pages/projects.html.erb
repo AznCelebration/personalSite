@@ -4,7 +4,71 @@
   <% provide(:title, "Projects") %>
   <%= javascript_include_tag('static_pages_js') %>
 </head>
-<body id="genPage">
+<body id="home">
+  <div id="gradient"></div>
+  <div class="left-list">
+    <div id="titleDiv">
+      See what I've been tinkering with!
+    </div>
+    <button id="hitMeUp" class="list-item proj">HitMeUp</button>
+    <button id="personal" class="list-item proj">Personal Website</button>
+  </div>
+  <div class="info-panel">
+    <div id="phitMeUp" class="panel panel-default">
+      <div class="panel-body projectPanel">
+        <h4 class="projectHeader">HitMeUp
+          <a href="http://sudowoodo-hitmeup.herokuapp.com"><i class="fa fa-link" aria-hidden="true"></i></a>
+        </h4>
+        <div class="projectBody">
+          <div id="text-hitmeupbtn" class="projectInfo">
+            <p class="infoP">
+              Having trouble organizing those huge social outings and family reunions or just want to see who's
+              free for some quick lunch? HitMeUp allows you to maintain a calendar of your personal events and
+              compares them to those in your friends list to find optimal free time! Check out your friends tab
+              to get a quick checkup on who's free at the moment or visit their profile page to see their
+              extensive calendar. Don't worry about privacy issues, HitMeUp automatically omits your calendar from
+              your profile page to those who aren't on your friends list!<br>
+            </p>
+            <p class="techP collapse">
+              Web Framework: Django<br><br>
+              Front-end: HTML/SCSS, Jinja, ReactJS, Javascript, Bootstrap<br><br>
+              Back-end: Python, PostgreSQL<br><br>
+              Misc: Git, PyCharm
+            </p>
+          </div>
+          <div class="projectImg">
+            <img alt="HitMeUpPic" src="assets/HitMeUp.jpg"/>
+          </div>
+        </div>
+        <button type="button" id="hitmeupbtn" class="btn btn-info projectBtn">See the Tech</button>
+      </div>
+    </div>
+    <div id="ppersonal" class="panel panel-default">
+      <div class="panel-body projectPanel">
+        <h4 class="projectHeader">My Personal Site</h4>
+        <div class="projectBody">
+          <div id="text-personalbtn" class="projectInfo">
+            <p class="infoP">
+              My personal website for employment and resume purposes ( you're on it right now! ).
+              Feel free to browse the site for information about me or to find extra info on things
+              I put on my resume!<br>
+            </p>
+            <p class="techP collapse">
+              Web Framework: Ruby on Rails<br><br>
+              Front-end: HTML/SCSS, Javascript, JQuery, Bootstrap<br><br>
+              Back-end: Ruby<br><br>
+              Misc: Git, Rubymine
+            </p>
+          </div>
+          <div class="projectImg">
+            <img alt="My Personal Site" src="assets/personal.jpg"/>
+          </div>
+          <button type="button" id="personalbtn" class="btn btn-info projectBtn">See the Tech</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
   <div id="titleDiv">
     <p>
       Curious about what I've been tinkering with in my spare time? Check out the projects below!
@@ -66,6 +130,6 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 </body>
 </html>
