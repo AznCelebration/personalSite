@@ -41,6 +41,7 @@ html {
 
 body {
   padding-top: 70px;
+  background-color: black;
 }
 
 .navbar {
@@ -103,9 +104,14 @@ body {
   overflow: auto;
 }
 
-.infoList li {
-  float: left;
-  width: 50%;
+.info-table {
+  border: 1px solid white;
+  border-bottom: 1px solid white;
+
+}
+
+td {
+  vertical-align: top;
 }
 
 #genPage {
@@ -148,17 +154,19 @@ body {
 }
 
 #home-main {
+  display: none;
   border-radius: 1.5px;
   position: absolute;
   bottom: 1em;
-  left: 16em;
+  left: 17.5%;
 }
 
 #home-title {
+  display: none;
   border-radius: 1.5px;
   position: absolute;
   top: 5em;
-  left: 16em;
+  left: 17.5%;
   background-color:rgba(0,0,0,0.5);
 }
 
@@ -179,6 +187,7 @@ body {
   padding: 10px 10px 10px 15px;
   color: white;
   font-family: 'Raleway', sans-serif;
+  font-size: 1.05vw;
 }
 
 #home-resume-text {
@@ -188,10 +197,11 @@ body {
   padding: 10px 10px 0 15px;
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.7vw;
 }
 
 .download {
+  font-size: 1.05vw;
   margin-left: 5px;
   border: 2px solid green;
   border-radius: 4px;
@@ -224,7 +234,7 @@ body {
   color: white;
   font-family: Verdana, Arial;
   border-bottom: 2px white solid;
-  margin: 2px 3em 1em 3em;
+  margin: 1vw 1vw 1vw 1vw;
 }
 
 .projectHeader {
@@ -273,4 +283,66 @@ img {
   color: dodgerblue;
 }
 
+.left-list {
+  position: absolute;
+  top: 0;
+  width: 15%;
+  float: left;
+  text-align: center;
+}
 
+.list-item {
+  font-size: 1vw;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border: 2px solid green;
+  border-radius: 4px;
+  display: inline-block;
+  //padding: 10px 10px 10px 10px;
+  font-family: 'Raleway', sans-serif;
+  background-color:rgba(0,0,0,0.7);
+  color: green;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  -mozkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.list-item:hover, .active-btn{
+  margin-left: 5px;
+  border: 2px solid green;
+  border-radius: 4px;
+  display: inline-block;
+  //padding: 10px 10px 10px 10px;
+  font-family: 'Raleway', sans-serif;
+  background-color: green;
+  color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  -mozkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.info-panel {
+  position: absolute;
+  top: 20%;
+  left: 24%;
+  width: 50%;
+}
+
+.info-table {
+  width: 100%;
+}
+
+.panel-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.3vw;
+}
+
+.panel {
+  display: none;
+  font-size: 1.1vw;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  border-color: rgba(0,0,0,0);;
+  background-color:rgba(0,0,0,0.7);
+}
