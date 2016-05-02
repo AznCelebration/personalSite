@@ -22,9 +22,12 @@ $(document).ready(function(){
         $(document.getElementById(toToggle)).children().slideToggle();
     });
     if($('body#home').length > 0) {
+        $(".navbar").hide();
         $("#black").fadeTo(3000, 0, function() {
             $('#home-title').fadeIn( function() {
-                $('#home-main').fadeIn(500);
+                $('#home-main').fadeIn(500, function() {
+                    $(".navbar").fadeIn(500);
+                });
             });
         });
     }

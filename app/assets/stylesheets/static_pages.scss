@@ -177,11 +177,12 @@ td {
   text-align: center;
   color: white;
   font-family: "Raleway", sans-serif;
+  font-size: 1.1vw;
   border-bottom: 2px white solid;
   margin: 1vw 1vw 1vw 1vw;
 }
 
-.projectHeader {
+.pwHeader {
   text-align: center;
   border-bottom: 2px darkgrey solid;
   padding-bottom: 2px;
@@ -189,11 +190,11 @@ td {
   font-family: "Raleway", sans-serif;
 }
 
-.projectPanel {
+.pwPanel {
   padding-top: 1px;
 }
 
-.projectInfo {
+.pwInfo {
   width: 40%;
   display: inline-block;
   word-wrap: break-word;
@@ -203,7 +204,7 @@ td {
   font-size: 1vw;
 }
 
-.projectImg {
+.pwImg {
   width: 60%;
   display: inline-block;
   float: left;
@@ -219,7 +220,7 @@ img {
   float: right;
 }
 
-.projectBody {
+.pwBody {
   position: relative;
   overflow: auto;
 }
@@ -286,7 +287,7 @@ img {
   font-size: 1.1vw;
   color: white;
   font-family: "Raleway", sans-serif;
-  border-color: rgba(0,0,0,0);;
+  border-color: rgba(0,0,0,0);
   background-color:rgba(0,0,0,0.7);
 }
 
@@ -296,3 +297,37 @@ img {
   right: 0px;
   margin: 14px 16px 0 0;
 }
+
+.job-ul {
+  padding-left: 15px;
+}
+
+#me-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.me-panel {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  border-radius: 1.5px;
+  position: relative;
+  top: 6em;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  background-color:rgba(0,0,0,0.7);
+  font-size: 1.2vw;
+  width: 50%;
+  left: 25%;
+}
+
+#me-skills {
+  //text-align: left;
+  margin-top: 9em;
+  font-size: 1vw;
+}
+
