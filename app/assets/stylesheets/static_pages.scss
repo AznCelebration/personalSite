@@ -151,6 +151,7 @@ td {
 }
 
 .download {
+  text-decoration: none;
   font-size: 1.05vw;
   margin-left: 5px;
   border: 2px solid #0097a7;
@@ -166,6 +167,7 @@ td {
 }
 
 .download:hover {
+  text-decoration: none;
   background-color: #0097a7;
   color: white;
   -webkit-transition-duration: 0.4s; /* Safari */
