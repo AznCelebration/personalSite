@@ -32,6 +32,6 @@ $(document).ready(function(){
         });
     }
     $(".left-list").fadeIn(600);
-    $(".me-wrapper").fadeIn(600);
+    $('#me-wrapper').fadeIn(600).removeClass('hidden');
 });
 
