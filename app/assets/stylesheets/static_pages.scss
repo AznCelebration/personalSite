@@ -8,7 +8,7 @@ body {
   padding-top: 70px;
   background-color: black;
   background-image: url("Home3.gif");
-  background-size: 70%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -44,7 +44,7 @@ body {
   outline: 0;
 }
 
-.navbar-default .navbar-nav > li > a:hover{
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
   background-color: white;
   color: #0097a7;
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -218,8 +218,25 @@ img {
 }
 
 .projectBtn {
+  background-color: #0097a7;
   display: block;
   float: right;
+  text-decoration: none;
+  //font-size: 1.05vw;
+  border: 2px solid #0097a7;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  -mozkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.projectBtn:hover, .projectBtn:focus {
+  background-color: #00838f;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  -mozkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 .pwBody {
@@ -249,7 +266,6 @@ img {
   border: 2px solid #0097a7;
   border-radius: 4px;
   display: inline-block;
-  //padding: 10px 10px 10px 10px;
   font-family: 'Raleway', sans-serif;
   background-color:rgba(0,0,0,0.7);
   color: #0097a7;
@@ -264,6 +280,11 @@ img {
   -webkit-transition-duration: 0.4s; /* Safari */
   -mozkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
+}
+
+.list-item:focus {
+  background-color: #0097a7;
+  color: white;
 }
 
 .info-panel {
@@ -317,8 +338,7 @@ img {
   text-align: center;
   padding: 10px 10px 10px 10px;
   border-radius: 1.5px;
-  position: relative;
-  top: 6em;
+  position: absolute;
   color: white;
   font-family: "Raleway", sans-serif;
   background-color:rgba(0,0,0,0.7);
@@ -327,9 +347,11 @@ img {
   left: 25%;
 }
 
+#me-info {
+  top: 6em;
+}
 #me-skills {
-  //text-align: left;
-  margin-top: 9em;
+  bottom: 2em;
   font-size: 1vw;
 }
 
