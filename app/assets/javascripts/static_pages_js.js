@@ -18,7 +18,7 @@ $(document).ready(function(){
             return text === "See the Tech" ? "See the Info" : "See the Tech";
         });
         var toToggle = $(this).attr("id");
-        var toToggle = "text-" + toToggle;
+        toToggle = "text-" + toToggle;
         $(document.getElementById(toToggle)).children().slideToggle();
     });
     if($('body#home').length > 0) {
