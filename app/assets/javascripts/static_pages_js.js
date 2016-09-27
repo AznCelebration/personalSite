@@ -22,16 +22,32 @@ $(document).ready(function(){
         $(document.getElementById(toToggle)).children().slideToggle();
     });
     if($('body#home').length > 0) {
-        $(".navbar").hide();
-        $("#black").fadeTo(3000, 0, function() {
-            $('#home-title').fadeIn( function() {
-                $('#home-main').fadeIn(500, function() {
-                    $(".navbar").fadeIn(500);
+        if(!sessionStorage.viewed) {
+            $(".navbar").hide();
+            $("#black").show();
+            $("#black").fadeTo(3000, 0, function() {
+                $('#home-title').fadeIn( function() {
+                    $('#home-main').fadeIn(500, function() {
+                        $(".navbar").fadeIn(500);
+                    });
                 });
             });
-        });
+            sessionStorage.viewed = 1;
+        }
+        else {
+            $('#home-title').fadeIn(500);
+            $('#home-main').fadeIn(500);
+        }
     }
     $(".left-list").fadeIn(600);
     $('#me-wrapper').fadeIn(600).removeClass('hidden');
+    $('#navbar-collapse-1').on('show.bs.collapse', function () {
+        $(".navbar").addClass("activeMobile");
+        $(".navbar").removeClass("hiddenMobile");
+    });
+    $('#navbar-collapse-1').on('hidden.bs.collapse', function () {
+        $(".navbar").addClass("hiddenMobile");
+        $(".navbar").removeClass("activeMobile");
+    });
 });
 
