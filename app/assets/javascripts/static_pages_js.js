@@ -10,8 +10,8 @@ $(document).ready(function(){
         var id = "p" + id;
         $(document.getElementsByClassName("list-item")).removeClass("active-btn");
         $(this).addClass("active-btn");
-        $(document.getElementsByClassName("panel")).fadeOut();
-        $(document.getElementById(id)).delay(500).fadeIn(500);
+        $(document.getElementsByClassName("panel")).fadeOut(250);
+        $(document.getElementById(id)).delay(250).fadeIn(250);
     });
     $(document.getElementsByClassName("projectBtn")).click(function () {
         $(this).text(function(i, text) {
@@ -27,16 +27,16 @@ $(document).ready(function(){
             $("#black").show();
             $("#black").fadeTo(3000, 0, function() {
                 $('#home-title').fadeIn( function() {
-                    $('#home-main').fadeIn(500, function() {
-                        $(".navbar").fadeIn(500);
+                    $('#home-main').fadeIn(250, function() {
+                        $(".navbar").fadeIn(250);
                     });
                 });
             });
             sessionStorage.viewed = 1;
         }
         else {
-            $('#home-title').fadeIn(500);
-            $('#home-main').fadeIn(500);
+            $('#home-title').fadeIn(250);
+            $('#home-main').fadeIn(250);
         }
     }
     $(".left-list").fadeIn(600);
