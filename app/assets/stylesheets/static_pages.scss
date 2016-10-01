@@ -203,7 +203,7 @@
 td {
   vertical-align: top;
 }
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 760px), only screen and (min-device-width: 760px) {
   #gradient {
     width: 100vw;
     height: 100vh;
