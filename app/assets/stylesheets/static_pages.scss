@@ -532,7 +532,7 @@ img {
   }
 
   .activeMobile {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
   }
 
   .navbar-default .navbar-nav > li > a {
@@ -568,19 +568,19 @@ img {
     position: absolute;
     top: 5em;
     left: 0%;
-    background-color:rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   #home-resume {
     border-radius: 1.5px;
     display: inline-block;
     padding-bottom: 0px;
-    background-color:rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   #home-info {
     border-radius: 1.5px;
-    background-color:rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   .text {
@@ -613,7 +613,7 @@ img {
     display: inline-block;
     padding: 9px 5px 9px 5px;
     font-family: 'Raleway', sans-serif;
-    background-color:rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     color: #0097a7;
   }
 
@@ -621,5 +621,62 @@ img {
     visibility: hidden;
   }
 
+  .mobile-list {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    overflow-x: scroll;
+    width: 100%;
+    white-space: nowrap;
+  }
 
+  .list-item {
+    padding: 10px 5px 10px 5px;
+    width: auto;
+    height: 50px;
+    font-size: 0.8em;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #0097a7;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #0097a7;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    -mozkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+
+  .panel {
+    display: none;
+    font-size: 3.3vw;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .panel-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 4vw;
+  }
+
+  .info-panel {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    width: 100%;
+  }
+
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
 }
