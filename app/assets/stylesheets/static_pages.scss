@@ -500,6 +500,7 @@ img {
 
 @media only screen and (max-width: 759px) {
   body {
+    overflow: hidden;
     padding-top: 70px;
     background-color: black;
     background-image: url("Mobile.gif");
@@ -618,20 +619,23 @@ img {
   }
 
   .left-list {
+    height: 0px;
     visibility: hidden;
   }
 
   .mobile-list {
+    padding-top: 10px;
     position: fixed;
     display: block;
     bottom: 0;
     overflow-x: scroll;
     width: 100%;
     white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .list-item {
-    padding: 10px 5px 10px 5px;
+    padding: 10px 8px 10px 8px;
     width: auto;
     height: 50px;
     font-size: 0.8em;
@@ -670,13 +674,60 @@ img {
     width: 100%;
   }
 
-  ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;
+  .pwHeader {
+    text-align: center;
+    border-bottom: 2px darkgrey solid;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 5vw;
   }
-  ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+
+  .pwPanel {
+    padding-top: 1px;
+  }
+
+  .pwInfo {
+    width: 100%;
+    display: inline-block;
+    word-wrap: break-word;
+    padding-top: 2px;
+    padding-left: 5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 3.5vw;
+  }
+
+  .pwImg {
+    display: none;
+  }
+
+  #me-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .me-panel {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    border-radius: 1.5px;
+    position: absolute;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    background-color:rgba(0,0,0,0.7);
+    font-size: 3.8vw;
+    width: 100%;
+    left: 0;
+  }
+
+  #me-info {
+    top: 15%;
+  }
+  #me-skills {
+    bottom: 0;
+    font-size: 3.3vw;
   }
 }
