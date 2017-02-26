@@ -25,7 +25,7 @@ $(document).ready(function(){
         if(!sessionStorage.viewed) {
             $(".navbar").hide();
             $("#black").show();
-            $("#black").fadeTo(3000, 0, function() {
+            $("#black").fadeTo(1000, 0, function() {
                 $('#home-title').fadeIn( function() {
                     $('#home-main').fadeIn(250, function() {
                         $(".navbar").fadeIn(250);
