@@ -4,144 +4,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-@media only screen and (max-width: 759px), only screen and (max-device-width: 769px) {
-  body {
-    padding-top: 70px;
-    background-color: black;
-    background-image: url("Mobile.gif");
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .nav {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .navbar {
-    background-color: transparent;
-    border: none;
-  }
-
-  .navbar-toggle {
-    background-color: white;
-    border-color: black;
-    color: white;
-  }
-
-  .navbar:focus {
-    background-color: black;
-  }
-
-  .hiddenMobile {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .activeMobile {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .navbar-default .navbar-nav > li > a {
-    color: #0097a7;
-    font-size: 1.1em;
-    border-top: 2px solid #0097a7;
-    font-family: 'Raleway', sans-serif;
-    outline: 0;
-  }
-
-  .navbar-default .navbar-nav > li.active > a {
-    background-color: white;
-    color: #0097a7;
-    outline: 0;
-    border: none;
-  }
-
-  #navbar-collapse-1 {
-    border: none;
-  }
-
-  #home-main {
-    display: none;
-    border-radius: 1.5px;
-    position: absolute;
-    bottom: 1em;
-    left: 17.5%;
-  }
-
-  #home-title {
-    display: none;
-    border-radius: 1.5px;
-    position: absolute;
-    top: 5em;
-    left: 17.5%;
-    background-color:rgba(0,0,0,0.5);
-  }
-
-
-  #home-resume {
-    border-radius: 1.5px;
-    display: inline-block;
-    padding-bottom: 0px;
-    background-color:rgba(0,0,0,0.5);
-  }
-
-  #home-info {
-    border-radius: 1.5px;
-    background-color:rgba(0,0,0,0.5);
-  }
-
-  .text {
-    padding: 10px 10px 10px 15px;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.05vw;
-  }
-
-  #home-resume-text {
-    padding-bottom: 0px;
-  }
-
-  #home-title-text {
-    padding: 10px 10px 0 15px;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.7vw;
-  }
-
-  .download {
-    text-decoration: none;
-    font-size: 1.05vw;
-    margin-left: 5px;
-    border: 2px solid #0097a7;
-    border-radius: 4px;
-    display: inline-block;
-    padding: 10px 10px 10px 10px;
-    font-family: 'Raleway', sans-serif;
-    background-color:rgba(0,0,0,0.7);
-    color: #0097a7;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    -mozkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-  }
-
-  .download:hover {
-    text-decoration: none;
-    background-color: #0097a7;
-    color: white;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    -mozkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-  }
-}
-
 @media only screen and (min-width: 760px) {
   body {
     padding-top: 70px;
     background-color: black;
     background-image: url("Home3.gif");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
   }
 
   .navbar {
@@ -209,6 +81,7 @@ td {
     height: 100vh;
     margin-top: -70px;
     position: relative;
+    opacity: 0.7;
     background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%,
             rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0) 25%,
             rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%,
@@ -268,7 +141,7 @@ td {
   padding: 10px 10px 10px 15px;
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.05vw;
+  font-size: 1.05em;
 }
 
 #home-resume-text {
@@ -279,12 +152,12 @@ td {
   padding: 10px 10px 0 15px;
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.7vw;
+  font-size: 1.7em;
 }
 
 .download {
   text-decoration: none;
-  font-size: 1.05vw;
+  font-size: 1.05em;
   margin-left: 5px;
   border: 2px solid #0097a7;
   border-radius: 4px;
@@ -311,7 +184,7 @@ td {
   text-align: center;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 1.1vw;
+  font-size: 1.1em;
   border-bottom: 2px white solid;
   margin: 1vw 1vw 1vw 1vw;
 }
@@ -335,14 +208,15 @@ td {
   padding-top: 2px;
   padding-left: 5px;
   font-family: "Raleway", sans-serif;
-  font-size: 1vw;
+  font-size: 1em;
+  border-left: 2px solid #A9A9A9;
 }
 
 .pwImg {
   width: 60%;
   display: inline-block;
   float: left;
-  border-right: 2px darkgrey solid;
+  //border-right: 2px darkgrey solid;
 }
 
 img {
@@ -392,7 +266,7 @@ img {
 .list-item {
   padding: 10px 0 10px 0;
   width: 80%;
-  font-size: 1vw;
+  font-size: 1em;
   margin-left: 5px;
   margin-bottom: 10px;
   border: 2px solid #0097a7;
@@ -434,12 +308,12 @@ img {
 .panel-title {
   text-align: center;
   margin-bottom: 10px;
-  font-size: 1.3vw;
+  font-size: 1.3em;
 }
 
 .panel {
   display: none;
-  font-size: 1.1vw;
+  font-size: 1.1em;
   color: white;
   font-family: "Raleway", sans-serif;
   border-color: rgba(0,0,0,0);
@@ -474,7 +348,7 @@ img {
   color: white;
   font-family: "Raleway", sans-serif;
   background-color:rgba(0,0,0,0.7);
-  font-size: 1.2vw;
+  font-size: 1.2em;
   width: 50%;
   left: 25%;
 }
@@ -484,7 +358,7 @@ img {
 }
 #me-skills {
   bottom: 2em;
-  font-size: 1vw;
+  font-size: 1em;
 }
 
 .pill {
@@ -504,8 +378,10 @@ img {
     padding-top: 70px;
     background-color: black;
     background-image: url("Mobile.gif");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
   }
 
   #gradient {
@@ -592,7 +468,7 @@ img {
     padding: 5px 5px 5px 10px;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 4.3vw;
+    font-size: 0.9em;
   }
 
   #home-resume-text {
@@ -606,12 +482,12 @@ img {
     margin-right: 5px;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 6vw;
+    font-size: 1.5em;
   }
 
   .download {
     text-decoration: none;
-    font-size: 4.2vw;
+    font-size: 0.95em;
     margin-left: 5px;
     border: 2px solid #0097a7;
     border-radius: 4px;
@@ -658,7 +534,7 @@ img {
 
   .panel {
     display: none;
-    font-size: 3.3vw;
+    font-size: 0.9em;
     color: white;
     font-family: "Raleway", sans-serif;
     border-color: rgba(0, 0, 0, 0);
@@ -668,7 +544,7 @@ img {
   .panel-title {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 4vw;
+    font-size: 1em;
   }
 
   .info-panel {
@@ -684,7 +560,7 @@ img {
     padding-bottom: 2px;
     margin-bottom: 0;
     font-family: "Raleway", sans-serif;
-    font-size: 5vw;
+    font-size: 1.8em;
   }
 
   .pwPanel {
@@ -698,11 +574,13 @@ img {
     padding-top: 2px;
     padding-left: 5px;
     font-family: "Raleway", sans-serif;
-    font-size: 3.5vw;
+    font-size: 1.1em;
+    border-left: none;
   }
 
   .pwImg {
     display: none;
+
   }
 
   #me-wrapper {
@@ -722,7 +600,7 @@ img {
     color: white;
     font-family: "Raleway", sans-serif;
     background-color:rgba(0,0,0,0.7);
-    font-size: 3.8vw;
+    font-size: 0.9em;
     width: 100%;
     left: 0;
   }
@@ -732,6 +610,6 @@ img {
   }
   #me-skills {
     bottom: 0;
-    font-size: 3.3vw;
+    font-size: 0.8em;
   }
 }
