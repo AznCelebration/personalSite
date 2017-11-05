@@ -219,6 +219,11 @@ td {
   //border-right: 2px darkgrey solid;
 }
 
+.pwVid {
+  display: inline-block;
+  float: left;
+}
+
 img {
   max-width: 100%;
 }
@@ -580,7 +585,10 @@ img {
 
   .pwImg {
     display: none;
+  }
 
+  .pwVid {
+    display: none;
   }
 
   #me-wrapper {
