@@ -2,6 +2,7 @@
  * Created by ksrithon on 4/9/16.
  */
 var pageInitialized = false;
+var last = '';
 $(document).ready(function(){
     if(pageInitialized) return;
     pageInitialized = true;
@@ -10,8 +11,14 @@ $(document).ready(function(){
         var id = "p" + id;
         $(document.getElementsByClassName("list-item")).removeClass("active-btn");
         $(this).addClass("active-btn");
+        if($(document.getElementById(last)).find('.embed-responsive-item')) {
+            var video = $(document.getElementById(last)).find('.embed-responsive-item').attr("src");
+            $(document.getElementById(last)).find('.embed-responsive-item').attr("src","");
+            $(document.getElementById(last)).find('.embed-responsive-item').attr("src",video);
+        }
         $(document.getElementsByClassName("panel")).fadeOut(250);
         $(document.getElementById(id)).delay(250).fadeIn(250);
+        last = id;
     });
     $(document.getElementsByClassName("projectBtn")).click(function () {
         $(this).text(function(i, text) {

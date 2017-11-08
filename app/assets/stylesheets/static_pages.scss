@@ -220,8 +220,10 @@ td {
 }
 
 .pwVid {
+  width: 60%;
   display: inline-block;
   float: left;
+  border-right: 2px darkgrey solid;
 }
 
 img {
@@ -375,6 +377,10 @@ img {
 
 .mobile-list {
   display: none;
+}
+
+.pwInfoVid {
+  border-left: none;
 }
 
 @media only screen and (max-width: 759px), only screen and (max-device-width: 769px) {
