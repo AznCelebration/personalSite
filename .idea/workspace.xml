@@ -4,9 +4,6 @@
     <list default="true" id="dac12a80-c5cc-4ce7-b06b-1bc2e17ba778" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/KavinSrithongkhamResume.pdf" afterPath="$PROJECT_DIR$/app/assets/images/KavinSrithongkhamResume.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/static_pages.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/static_pages.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/aboutme.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/aboutme.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/projects.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/projects.html.erb" />
     </list>
     <ignored path="personalSite.iws" />
@@ -22,7 +19,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/personalSite@Production__personalSite.coverage" NAME="Production: personalSite Coverage Results" MODIFIED="1509920603339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="personalSite" />
-    <SUITE FILE_PATH="coverage/personalSite@Development__personalSite.coverage" NAME="Development: personalSite Coverage Results" MODIFIED="1509924451249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="personalSite" />
+    <SUITE FILE_PATH="coverage/personalSite@Development__personalSite.coverage" NAME="Development: personalSite Coverage Results" MODIFIED="1510103674216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="personalSite" />
     <SUITE FILE_PATH="coverage/personalSite@db_create_all__personalSite.coverage" NAME="db:create:all: personalSite Coverage Results" MODIFIED="1459908496655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="personalSite" />
     <SUITE FILE_PATH="coverage/personalSite@db_create__personalSite.coverage" NAME="db:create: personalSite Coverage Results" MODIFIED="1459907925017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="personalSite" />
     <SUITE FILE_PATH="coverage/personalSite@db_migrate__personalSite.coverage" NAME="db:migrate: personalSite Coverage Results" MODIFIED="1459915085609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="personalSite" />
@@ -44,17 +41,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="projects.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="projects.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/projects.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+            <state relative-caret-position="525">
+              <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="static_pages.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="static_pages.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -113,8 +110,8 @@
         <option value="$PROJECT_DIR$/app/views/static_pages/education.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/aboutme.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/projects.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/static_pages.scss" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/projects.html.erb" />
       </list>
     </option>
   </component>
@@ -162,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -370,9 +368,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -697,11 +694,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.aboutme" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate: personalSite" />
-        <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: personalSite" />
-        <item index="3" class="java.lang.String" itemvalue="Rake.db:create:all: personalSite" />
-        <item index="4" class="java.lang.String" itemvalue="Rake.db:create: personalSite" />
+        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate: personalSite" />
+        <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: personalSite" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.db:create:all: personalSite" />
+        <item index="3" class="java.lang.String" itemvalue="Rake.db:create: personalSite" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.aboutme" />
       </list>
     </recent_temporary>
   </component>
@@ -748,11 +745,12 @@
       <workItem from="1488085412567" duration="7965000" />
       <workItem from="1489466288194" duration="1310000" />
       <workItem from="1509918648335" duration="5519000" />
+      <workItem from="1510103222280" duration="604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166082000" />
+    <option name="totallyTimeSpent" value="166686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="647" extended-state="6" />
@@ -845,9 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,9 +1127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,7 +1134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
           <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,7 +1141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1206">
           <caret line="72" column="14" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1158,7 +1148,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,18 +1159,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/projects.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="590" column="18" selection-start-line="590" selection-start-column="18" selection-end-line="590" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/projects.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
           <folding />
         </state>
       </provider>
